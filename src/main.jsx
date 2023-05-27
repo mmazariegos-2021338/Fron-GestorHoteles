@@ -11,6 +11,7 @@ import CardHoteles from './pages/CardHoteles/CardHoteles';
 import HabitacionesPage from './pages/HabitacionesPage/HabitacionesPage';
 import ReservacionesPage from './pages/Reservaciones/ReservacionesPage';
 import Factura from './pages/Factura/Factura';
+import Cliente from './pages/Cliente/Cliente';
 
 
 
@@ -47,6 +48,10 @@ const routes = createBrowserRouter([
       {
         path:'/Factura',
         element: <Factura></Factura>
+      },
+      {
+        path:'/Cliente',
+        element: <Cliente></Cliente>
       }
     ]
   },

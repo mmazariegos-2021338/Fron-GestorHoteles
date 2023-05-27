@@ -1,5 +1,6 @@
 import React from 'react'
 import { Outlet, useNavigate } from "react-router-dom"
+import '../../../public/style.css';
 
 import { useState } from 'react'
 import { getHotel } from '../../api/apiHotel'

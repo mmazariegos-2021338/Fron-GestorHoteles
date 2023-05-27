@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { login } from '../../api/apiLogin'
+import '../../../public/style.css';
 
 export const LoginPage = () => {
 
@@ -18,6 +19,9 @@ export const LoginPage = () => {
   return (
     <>
       <div className="container mt-3">
+      <br></br>
+        <h1><img src="../../../public/45.png"/></h1>
+      
         <h1>LOGIN</h1>
         <form onSubmit={handleSubmit} >
           <div className="mb-3">
@@ -28,8 +32,13 @@ export const LoginPage = () => {
             <label className="form-label">Password</label>
             <input type="password" className="form-control" name='password' value={password} onChange={(e) => setPassword(e.target.value)} />
           </div>
-          <button type="submit" className="btn btn-primary">Iniciar Sesión</button>
+          <button type="submit" className="btn btn-primary ">Iniciar Sesión</button>
         </form>
+
+        <footer>
+            <img src="../../../public/63.png"/>
+            <p class="copyright">&copy Copyright Gestor Hoteles Marvin Mazariegos - 2023</p>
+        </footer>
       </div>
     </>
   )
